@@ -1,203 +1,165 @@
-/* OBS */
-body {
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0px auto;
-  overflow: hidden;
+/* 初期値 */
+:root {
+    --avatar-height: 150px;
+    --avatar-width: 150px;
+    --avatar-background: rgba(0, 0, 0, 0.64);
+    --avatar-border-size: 3px;
+    --avatar-border-style: solid;
+    --avatar-border-color: rgb(245, 245, 245);
+    --avatar-border-radius: 10px;
+
+    --badge-height: 40px;
+    --badge-width: 40px;
+    --badge-background: rgb(245, 245, 245);
+    --badge-font-size: 1.5rem;
+    --badge-font-color: rgb(66, 66, 66);
+
+    --status-column: 1;
+    --status-height: 50px;
+    --status-width: 250px;
+    --status-background1: var(--background-color, rgb(245, 245, 245));
+    --status-background2: var(--background-color, rgb(245, 245, 245));
+    --status-background3: var(--background-color, rgb(245, 245, 245));
+    --status-font-size: 2rem;
+    --status-font-color: rgb(66, 66, 66);
+    --status-font-secondary-color: var(--font-color-fail, rgb(154, 0, 54));
+    --status-font-border-color: rgb(245, 245, 245);
+    --status-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    --status-font-skew: skewX(0deg);
+    --status-border-width: var(--border-width, 0px);
+    --status-border-style: solid;
+    --status-border-color: var(--border-color, rgb(245, 245, 245));
+    --status-border-image: var(--border-image, url());
+    --status-border-radius: var(--border-radius, 0);
+    --status-border-shadow: var(--border-shadow, 0);
+    --status-border-skew: skewX(0deg);
+    --status-border-rotate: rotate(0deg);
+    
 }
 
+/* アバターを消す 
 :root {
-  /* ボックス */
-  --balloon-background-color: var(--background-color, rgb(0, 0, 0));
-  --balloon-background-padding: var(--background-padding, 8px 8px 8px 8px);
-  --balloon-border-color: var(--border-color, rgb(255, 255, 255));
-  --balloon-border-image: var(--border-image, url());
-  --balloon-border-width: var(--border-width, 2px);
-  --balloon-border-radius: var(--border-radius, 10px);
-  --balloon-border-shadow: var(--border-shadow, 0);
-  --balloon-width: 960px;
-  /* テキスト */
-  --font-size-name: 1.6rem;
-  --font-color-name: var(--font-color, rgb(245, 245, 245));
-  --font-color-name-shadow: var(--font-color-shadow, 0);
-  --font-size-dice: calc(var(--font-size, 1.6rem) + .1rem);
-  --font-color-dice: var(--font-color-success, rgb(33 150 243));
-  --font-color-dice-shadow: var(--font-color-success-shadow, 0);
-  --font-size-main: calc(var(--font-size, 1.5rem) + .5rem);
-  --font-color-main: var(--font-color, rgb(245, 245, 245));
-  --font-color-main-shadow: var(--font-color-shadow, 0);
-  /* イメージ */
-  --image-background: var(--background-color, rgb(255, 255, 255));
-  --image-width: 120px;
-  --image-height: 120px;
-  --image-border-color: var(--border-color, rgb(0, 0, 0));
-  --image-border-width: var(--border-width, 6px);
-  --image-border-radius: 50%;
-  --image-margin: .5rem;
-  /* 非表示設定 'block' or 'none' */
-  --image-display: block;
-  --dice-display: block;
-  /* 非表示設定 'inline-flex' or 'none' */
-  --skip-display: inline-flex;
-  --close-display: inline-flex;
-}
-
-/* ココフォリア デフォルトの表示 */
-/*
-:root {
-  --image-background: transparent;
-  --image-width: 240px;
-  --image-height: auto;
-  --image-border-width: 0;
-  --image-border-radius: 0;
-  --image-margin: 0;
+    --avatar-padding: 0;
+    --avatar-display: none;
 }
 */
 
-/**************************
-　個別
-**************************/
-/* カットイン */
-div[open],
-/* 背景 */
-.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
-/* 盤面 */
-div[tabindex="0"]>div:nth-child(1),
-/* キャラ */
-.MuiBadge-root,
-.MuiBadge-root+div>div,
-/* チャット */
-.MuiDrawer-root.MuiDrawer-docked {
-  display: none !important;
+/* 分母を消す（0だけ消すのは不可能）
+:root {
+    --status-denom-font-size: 0;
+}
+*/
+
+/* OBS */
+body.transparent {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
 }
 
-/**************************
-　共通
-**************************/
-/* モーダル削除 */
-[role="presentation"],
-/* ヘッダー削除 */
-/* headerのみだとチャットのタブも消える */
-header>.MuiToolbar-gutters,
-/* 音量 */
-div[tabindex="0"]>div:nth-child(3),
-/* 拡大縮小 */
-.MuiButtonBase-root+div,
-/* 鉛筆ボタン */
-.MuiButtonBase-root.MuiFab-root,
-/* 監視モード */
-.MuiSnackbar-root,
-/* タイマー */
-.MuiPaper-elevation5,
-/* 新しいダイスを非表示 */
-div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
-/* スクロールバー */
-::-webkit-scrollbar {
-  display: none !important;
+#root {
+    padding-top: var(--avatar-padding, 20px);
 }
 
-/* 盤面 */
-div[tabindex="0"] {
-  width: 100% !important;
+/* アバター大枠 */
+.MuiBadge-root {
+    display: var(--avatar-display, block);
 }
 
-/**************************
-　吹き出し
-**************************/
+/* アバター画像 */
+.MuiAvatar-root {
+    height: var(--avatar-height);
+    width: var(--avatar-width);
+    background: var(--avatar-background);
+    border: var(--avatar-border-size) var(--avatar-border-style) var(--avatar-border-color);
+    border-radius: var(--avatar-border-radius);
+    align-items: start;
+}
 
-/* タイトルの方 */
-.MuiTypography-subtitle2,
+/* バッジ */
+.MuiBadge-badge {
+    height: var(--badge-height);
+    width: var(--badge-width);
+    border-radius: 50%;
+    font-size: var(--badge-font-size);
+    color: var(--badge-font-color) !important;
+    background: var(--badge-background) !important;
+}
+
+
+/* ステータス 大枠 */
+[variant="bar"] {
+    max-width: calc((var(--status-width) + var(--status-border-width)*2 + 8px) * var(--status-column));
+}
+
+/* ステータス毎 大枠 */
+[variant="bar"]>div {
+    height: var(--status-height);
+    width: var(--status-width);
+    border: var(--status-border-width) var(--status-border-style) var(--status-border-color);
+    border-image: var(--status-border-image);
+    border-radius: var(--status-border-radius);
+    box-shadow: var(--status-border-shadow);
+    overflow: hidden;
+    transform: var(--status-border-skew) var(--status-border-rotate);
+}
+
+/* ステータス 背景 大枠 */
+[variant="bar"]>div>div {
+    height: var(--status-height);
+    width: var(--status-width);
+}
+
+/* ステータス 背景 */
+[variant="bar"]>div:nth-child(1)>div:nth-child(2)>div {
+    height: var(--status-height);
+    background: var(--status-background1);
+}
+[variant="bar"]>div:nth-child(2)>div:nth-child(2)>div {
+    height: var(--status-height);
+    background: var(--status-background2);
+}
+[variant="bar"]>div:nth-child(3)>div:nth-child(2)>div {
+    height: var(--status-height);
+    background: var(--status-background3);
+}
+
+/* テキスト */
 .MuiTypography-body2 {
-  font-size: 1.6rem;
+    font-size: var(--status-font-size);
+    font-family: var(--status-font-family);
+    color: var(--status-font-color);
+    text-shadow:
+        var(--status-font-border-color) 1px 1px 0px,
+        var(--status-font-border-color) -1px -1px 0px,
+        var(--status-font-border-color) -1px 1px 0px,
+        var(--status-font-border-color) 1px -1px 0px,
+        var(--status-font-border-color) 0px 1px 0px,
+        var(--status-font-border-color) 0px -1px 0px,
+        var(--status-font-border-color) -1px 0px 0px,
+        var(--status-font-border-color) 1px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
-.MuiToolbar-gutters {
-  padding: 12px 24px;
+/* ステータスバー内文字角度設定 */
+[variant="bar"]>div p {
+    /* ステータスバーの形状の角度のマイナスの値を入れる */
+    transform: var(--status-font-skew);
 }
 
-/* ログの方 */
-.MuiTypography-body1 {
-  font-size: 2rem;
+/* 数値全体 */
+.MuiTypography-body2+.MuiTypography-body2 {
+    font-size: var(--status-denom-font-size, var(--status-font-size));
 }
 
-.MuiToolbar-root+div {
-  padding: 0px 24px 16px;
-  height: 160px;
+/* 分子 */
+.MuiTypography-body2+.MuiTypography-body2>span {
+    font-size: var(--status-font-size);
 }
 
-/* アイコン */
-.MuiPaper-root>img {
-  display: var(--image-display);
-  width: var(--image-width);
-  height: var(--image-height);
-  margin-bottom: var(--image-margin);
-  background: var(--image-background);
-  border: solid var(--image-border-width) var(--image-border-color);
-  border-radius: var(--image-border-radius);
-  object-fit: cover;
-  object-position: top;
-}
-
-.MuiPaper-root>img[src=""] {
-  display: none;
-}
-
-/* カスタム用 */
-div[tabindex="0"]>.MuiPaper-root {
-  background-color: transparent;
-  max-width: var(--balloon-width);
-  left: 5px;
-  right: 5px;
-  bottom: 10px;
-}
-
-.MuiPaper-root>.MuiPaper-root {
-  padding: var(--balloon-background-padding);
-  background: var(--balloon-background-color);
-  border: solid var(--balloon-border-width) var(--balloon-border-color);
-  border-radius: var(--balloon-border-radius);
-  border-image: var(--balloon-border-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.MuiPaper-elevation1 {
-  box-shadow: var(--balloon-border-shadow);
-}
-
-/* 名前 */
-.MuiTypography-subtitle2 {
-  font-size: var(--font-size-name);
-  color: var(--font-color-name);
-  text-shadow: var(--font-color-name-shadow);
-}
-
-/* ダイス結果 */
-.MuiTypography-body2 {
-  font-size: var(--font-size-dice);
-  color: var(--font-color-dice);
-  text-shadow: var(--font-color-dice-shadow);
-}
-
-/* 本文 */
-.MuiTypography-body1 {
-  font-size: var(--font-size-main);
-  color: var(--font-color-main);
-  text-shadow: var(--font-color-main-shadow);
-}
-
-/* ダイス */
-.MuiPaper-root>div:nth-child(1) {
-  display: var(--dice-display);
-  margin-bottom: var(--image-margin);
-}
-
-/* スキップボタン */
-[title="スキップ"] {
-  display: var(--skip-display);
-}
-
-/* 閉じるボタン */
-[title="閉じる"] {
-  display: var(--close-display);
+/* 赤文字 */
+[color="secondary"] {
+    color: var(--status-font-secondary-color)
 }
