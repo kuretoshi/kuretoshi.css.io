@@ -37,6 +37,7 @@
   --font-color-success-shadow: 0;
   --font-size: 1.5rem;
   --font-shadow: 0;
+  --status-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   --image-radius: 0%;
   --width: 500px;
   --line-clamp: 30;
@@ -92,7 +93,8 @@ hr {
 }
 
 .MuiTypography-body2 {
-  font-size: var(--font-size)
+  font-size: var(--font-size);
+  font-family: var(--status-font-family);
 }
 
 .MuiList-root>div:nth-child(1)>div>div>div {
