@@ -37,10 +37,10 @@
   --font-color-success-shadow: 0;
   --font-size: 1.5rem;
   --font-shadow: 0;
-  --text-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   --image-radius: 0%;
   --width: 500px;
   --line-clamp: 30;
+  --font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .MuiDrawer-root>.MuiPaper-root {
@@ -94,7 +94,7 @@ hr {
 
 .MuiTypography-body2 {
   font-size: var(--font-size);
-  font-family: var(--text-font-family);
+  font-family: var(--font-family);
 }
 
 .MuiList-root>div:nth-child(1)>div>div>div {
