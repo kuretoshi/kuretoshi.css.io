@@ -34,6 +34,10 @@
   --font-size-main: calc(var(--font-size, 1.5rem) + .5rem);
   --font-color-main: var(--font-color, rgb(245, 245, 245));
   --font-color-main-shadow: var(--font-color-shadow, 0);
+  --font-color-fail: rgb(245, 0, 87);
+  --font-color-fail-shadow: 0;
+  --font-color-success: rgb(33, 150, 243);
+  --font-color-success-shadow: 0;
   /* イメージ */
   --image-background: var(--background-color, rgb(255, 255, 255));
   --image-width: 120px;
