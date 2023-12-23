@@ -34,7 +34,7 @@
     --status-border-shadow: var(--border-shadow, 0);
     --status-border-skew: skewX(0deg);
     --status-border-rotate: rotate(0deg);
-    --status-border-scale: scale(0);
+    --status-border-scale: scale(1);
     
 }
 
