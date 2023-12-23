@@ -34,6 +34,7 @@
     --status-border-shadow: var(--border-shadow, 0);
     --status-border-skew: skewX(0deg);
     --status-border-rotate: rotate(0deg);
+    --status-border-scale: scale(0);
     
 }
 
@@ -101,7 +102,7 @@ body.transparent {
     border-radius: var(--status-border-radius);
     box-shadow: var(--status-border-shadow);
     overflow: hidden;
-    transform: var(--status-border-skew) var(--status-border-rotate);
+    transform: var(--status-border-skew) var(--status-border-rotate) var(--status-border-scale);
 }
 
 /* ステータス 背景 大枠 */
