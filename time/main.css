@@ -14,6 +14,7 @@
 :root{
   --font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   --font-size: 3rem;
+  --font-color: rgb(255, 255, 255);
 }
 
 /* 盤面の枠線 */
@@ -45,4 +46,8 @@ header + div {
 .MuiBox-root h2{
     font-family: var(--font-family);
     font-size: var(--font-size);
+}
+
+.MuiBox-root{
+  background-color: var(--font-color);
 }
