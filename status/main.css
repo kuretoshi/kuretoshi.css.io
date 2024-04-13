@@ -21,6 +21,7 @@
     --status-background2: var(--background-color, rgb(245, 245, 245));
     --status-background3: var(--background-color, rgb(245, 245, 245));
     --status-background4: var(--background-color, rgb(245, 245, 245));
+    --status-background5: var(--background-color, rgb(245, 245, 245));
     --status-font-size: 2rem;
     --status-font-color: rgb(66, 66, 66);
     --status-font-secondary-color: var(--font-color-fail, rgb(154, 0, 54));
@@ -126,6 +127,10 @@ body.transparent {
     background: var(--status-background3);
 }
 [variant="bar"]>div:nth-child(4)>div:nth-child(2)>div {
+    height: var(--status-height);
+    background: var(--status-background4);
+}
+[variant="bar"]>div:nth-child(5)>div:nth-child(2)>div {
     height: var(--status-height);
     background: var(--status-background4);
 }
