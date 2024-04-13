@@ -132,7 +132,7 @@ body.transparent {
 }
 [variant="bar"]>div:nth-child(5)>div:nth-child(2)>div {
     height: var(--status-height);
-    background: var(--status-background4);
+    background: var(--status-background5);
 }
 
 /* テキスト */
