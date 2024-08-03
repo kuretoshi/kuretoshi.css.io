@@ -4,6 +4,7 @@
   --balloon-border-top: 0px;
   --balloon-border-right: 0px;
   --balloon-border-font-color: white;
+  --balloon-border-transform-rotate: 0deg;
 }
 
 .MuiPaper-root>.MuiPaper-root {
@@ -11,7 +12,8 @@
 }
 
 .MuiPaper-root>.MuiPaper-root::after {
-  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
+  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)))
+             rotate(--balloon-border-transform-rotate);
   content: var(--balloon-border-content);
   position: absolute;
   font-size: var(--balloon-border-font-size);
