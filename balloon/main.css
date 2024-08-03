@@ -24,6 +24,7 @@
   --balloon-border-radius: var(--border-radius, 10px);
   --balloon-border-shadow: var(--border-shadow, 0);
   --balloon-width: 960px;
+  --balloon-border-transform-skewX: 0deg;
   /* テキスト */
   --font-size-name: 1.6rem;
   --font-color-name: var(--font-color, rgb(245, 245, 245));
@@ -183,4 +184,21 @@ div[tabindex="0"]>.MuiPaper-root {
 /* 閉じるボタン */
 [aria-label="閉じる"] {
   display: var(--close-display);
+}
+
+/* 枠変形 */
+.MuiPaper-root {
+  transform: skewX(var(--balloon-border-transform-skewX));
+}
+.MuiPaper-root>.MuiPaper-root p {
+  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
+}
+.MuiPaper-root>.MuiPaper-root h6 {
+  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
+}
+.MuiPaper-root>div:nth-child(1) {
+  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
+}
+.css-175dgcc {
+  box-shadow: none;
 }
