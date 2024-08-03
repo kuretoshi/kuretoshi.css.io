@@ -1,3 +1,5 @@
+@import url("https://kuretoshi.github.io/kuretoshi.css.io/balloon/main.css");
+
 :root {
   --balloon-border-content: "";
   --balloon-border-font-size: 0px;
@@ -11,6 +13,7 @@
 }
 
 .MuiPaper-root>.MuiPaper-root::after {
+  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
   content: var(--balloon-border-content);
   position: absolute;
   font-size: var(--balloon-border-font-size);
