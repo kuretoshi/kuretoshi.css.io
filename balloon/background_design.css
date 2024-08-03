@@ -13,7 +13,7 @@
 
 .MuiPaper-root>.MuiPaper-root::after {
   transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
-  rotate var(--balloon-border-rotate);
+  rotate: var(--balloon-border-rotate);
   content: var(--balloon-border-content);
   position: absolute;
   font-size: var(--balloon-border-font-size);
