@@ -195,6 +195,9 @@ div[tabindex="0"]>.MuiPaper-root {
 .css-9l3uo3 {
   transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
 }
+.sc-hxyzrr {
+  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
+}
 .css-175dgcc {
   box-shadow: none;
 }
