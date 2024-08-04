@@ -132,9 +132,8 @@ div[tabindex="0"]>.MuiPaper-root {
   box-shadow: var(--balloon-border-shadow);
 }
 
-/* 名前、ダイス結果 */
-.css-6tsndk,
-.MuiTypography-colorSecondary {
+/* 名前 */
+.css-6tsndk h6 {
   font-size: var(--font-size-name);
   color: var(--font-color-name);
   text-shadow: var(--font-color-name-shadow);
