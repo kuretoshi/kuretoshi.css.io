@@ -2,10 +2,13 @@
 
 :root {
   --balloon-border-content: "";
+  --balloon-border-img: "";
   --balloon-border-font-size: 0px;
   --balloon-border-top: 0px;
   --balloon-border-right: 0px;
   --balloon-border-font-color: white;
+  --balloon-border-img-width: 0px;
+  --balloon-border-img-height: 0px;
 }
 
 .MuiPaper-root>.MuiPaper-root {
@@ -15,7 +18,13 @@
 .MuiPaper-root>.MuiPaper-root::after {
   transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
   content: var(--balloon-border-content);
+  background-image: var();
   position: absolute;
+  display: inline-block;
+  width: var(--balloon-border-img-width);
+  height: var(--balloon-border-img-height);
+  background-position: center;
+  background-size: contain;
   font-size: var(--balloon-border-font-size);
   top: var(--balloon-border-top);
   right: var(--balloon-border-right);
