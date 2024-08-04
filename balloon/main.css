@@ -132,19 +132,12 @@ div[tabindex="0"]>.MuiPaper-root {
   box-shadow: var(--balloon-border-shadow);
 }
 
-/* 名前 */
-.css-hf8y9a {
+/* 名前、ダイス結果 */
+.css-6tsndk {
   font-size: var(--font-size-name);
   color: var(--font-color-name);
   text-shadow: var(--font-color-name-shadow);
   font-family: var(--name-font-family);
-}
-
-/* ダイス結果 */
-.css-1j13mke {
-  font-size: var(--font-size-dice);
-  text-shadow: var(--font-color-dice-shadow);
-  font-family: var(--dice-font-family);
 }
 
 /* 本文 */
