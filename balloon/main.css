@@ -133,7 +133,8 @@ div[tabindex="0"]>.MuiPaper-root {
 }
 
 /* 名前、ダイス結果 */
-.css-6tsndk {
+.css-6tsndk,
+.MuiTypography-colorSecondary {
   font-size: var(--font-size-name);
   color: var(--font-color-name);
   text-shadow: var(--font-color-name-shadow);
@@ -159,6 +160,7 @@ div[tabindex="0"]>.MuiPaper-root {
 .MuiTypography-colorPrimary {
   color: var(--font-color-success);
   text-shadow: var(--font-color-success-shadow);
+  font-family: var(--name-font-family);
 }
 
 /* 失敗 */
@@ -166,6 +168,7 @@ div[tabindex="0"]>.MuiPaper-root {
 .MuiTypography-colorSecondary {
   color: var(--font-color-fail);
   text-shadow: var(--font-color-fail-shadow);
+  font-family: var(--name-font-family);
 }
 
 /* スキップボタン */
