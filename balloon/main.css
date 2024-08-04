@@ -186,16 +186,13 @@ div[tabindex="0"]>.MuiPaper-root {
 }
 
 /* 枠変形 */
-.MuiPaper-root {
+.css-175dgcc {
   transform: skewX(var(--balloon-border-transform-skewX));
 }
-.MuiPaper-root>.MuiPaper-root p {
+.css-6tsndk {
   transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
 }
-.MuiPaper-root>.MuiPaper-root h6 {
-  transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
-}
-.MuiPaper-root>div:nth-child(1) {
+.css-9l3uo3 {
   transform: skewX(calc(-1 * var(--balloon-border-transform-skewX)));
 }
 .css-175dgcc {
