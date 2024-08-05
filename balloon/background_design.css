@@ -9,6 +9,7 @@
   --balloon-border-font-color: white;
   --balloon-border-img-width: 0px;
   --balloon-border-img-height: 0px;
+  --balloon-border-opacity: 1;
 }
 
 .MuiPaper-root>.MuiPaper-root {
@@ -29,4 +30,5 @@
   top: var(--balloon-border-top);
   right: var(--balloon-border-right);
   color: var(--balloon-border-font-color);
+  opacity: var(--balloon-border-opacity);
 }
