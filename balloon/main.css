@@ -25,6 +25,7 @@
   --balloon-border-shadow: var(--border-shadow, 0);
   --balloon-width: 960px;
   --balloon-border-transform-skewX: 0deg;
+  --balloon-left: 0;
   /* テキスト */
   --font-size-name: 1.6rem;
   --font-color-name: var(--font-color, rgb(245, 245, 245));
@@ -195,4 +196,5 @@ div[tabindex="0"]>.MuiPaper-root {
 }
 .css-175dgcc {
   box-shadow: none;
+  left: var(--balloon-left);
 }
