@@ -57,6 +57,10 @@
   /* 非表示設定 'inline-flex' or 'none' */
   --skip-display: inline-flex;
   --close-display: inline-flex;
+
+  /* アイコン位置 */
+  --image-left: 0;
+  --image-top: 0;
 }
 
 /* ココフォリア デフォルトの表示 */
@@ -102,6 +106,8 @@
   border-radius: var(--image-border-radius);
   object-fit: cover;
   object-position: top;
+  left: var(--image-left);
+  top: var(--image-top);
 }
 
 .MuiPaper-root>img[src=""] {
