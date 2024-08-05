@@ -202,5 +202,6 @@ div[tabindex="0"]>.MuiPaper-root {
 }
 .css-175dgcc {
   box-shadow: none;
+  background-image: none;
   left: var(--balloon-left);
 }
