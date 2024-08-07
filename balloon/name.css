@@ -1,0 +1,45 @@
+:root {
+  balloon-name-top: 12px;
+  balloon-name-left: 24px;
+  balloon-name-width: auto;
+  balloon-name-padding-top: 0px;
+  balloon-name-padding-bottom: 0px;
+  balloon-name-padding-left: 0px;
+  balloon-name-background-color: none;
+  balloon-name-border-radius: 0px;
+  balloon-name-border: none;
+  balloon-dice-result-top: 12px;
+  balloon-dice-result-left: 24px;
+  balloon-dice-top: -75px;
+  balloon-dice-right: 16px;
+}
+
+.css-6tsndk {
+  display: block;
+}
+
+.css-6tsndk h6 {
+  position: absolute;
+  top: var(balloon-name-top);
+  left: var(balloon-name-left);
+  width: var(balloon-name-width);
+  height: auto;
+  padding-top: var(balloon-name-padding-top);
+  padding-bottom: var(balloon-name-padding-bottom);
+  padding-left: var(balloon-name-padding-left);
+  background-color: var(balloon-name-background-color);
+  border-radius: var(balloon-name-border-radius);
+  border: var(balloon-name-border);
+}
+
+.css-6tsndk p {
+  position: absolute;
+  top: var(balloon-dice-result-top);
+  left: var(balloon-dice-result-left);
+}
+
+.sc-hxyzrr {
+  position: absolute;
+  top: var(balloon-dice-top);
+  right: var(balloon-dice-right);
+}
