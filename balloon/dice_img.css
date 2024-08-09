@@ -1,0 +1,262 @@
+:root {
+  /* ダイス 4面 */
+  --4_dice1: url("/images/4_dice/4_dice[1].png");
+  --4_dice2: url("/images/4_dice/4_dice[2].png");
+  --4_dice3: url("/images/4_dice/4_dice[3].png");
+  --4_dice4: url("/images/4_dice/4_dice[4].png");
+  /* ダイス 6面 */
+  --6_dice1: url("/images/6_dice/6_dice[1].png");
+  --6_dice2: url("/images/6_dice/6_dice[2].png");
+  --6_dice3: url("/images/6_dice/6_dice[3].png");
+  --6_dice4: url("/images/6_dice/6_dice[4].png");
+  --6_dice5: url("/images/6_dice/6_dice[5].png");
+  --6_dice6: url("/images/6_dice/6_dice[6].png");
+  /* ダイス 10面1の位 */
+  --10to10_dice1: url("/images/10_dice/10_dice[1].png");
+  --10to10_dice2: url("/images/10_dice/10_dice[2].png");
+  --10to10_dice3: url("/images/10_dice/10_dice[3].png");
+  --10to10_dice4: url("/images/10_dice/10_dice[4].png");
+  --10to10_dice5: url("/images/10_dice/10_dice[5].png");
+  --10to10_dice6: url("/images/10_dice/10_dice[6].png");
+  --10to10_dice7: url("/images/10_dice/10_dice[7].png");
+  --10to10_dice8: url("/images/10_dice/10_dice[8].png");
+  --10to10_dice9: url("/images/10_dice/10_dice[9].png");
+  --10to10_dice10: url("/images/10_dice/10_dice[10].png");
+  /* ダイス 10面10の位 */
+  --10to100_dice1: url("/images/100_dice/100_dice[1].png");
+  --10to100_dice2: url("/images/100_dice/100_dice[2].png");
+  --10to100_dice3: url("/images/100_dice/100_dice[3].png");
+  --10to100_dice4: url("/images/100_dice/100_dice[4].png");
+  --10to100_dice5: url("/images/100_dice/100_dice[5].png");
+  --10to100_dice6: url("/images/100_dice/100_dice[6].png");
+  --10to100_dice7: url("/images/100_dice/100_dice[7].png");
+  --10to100_dice8: url("/images/100_dice/100_dice[8].png");
+  --10to100_dice9: url("/images/100_dice/100_dice[9].png");
+  --10to100_dice10: url("/images/100_dice/100_dice[10].png");
+  /* ダイス 20面 */
+  --20_dice1: url("/images/20_dice/20_dice[1].png");
+  --20_dice2: url("/images/20_dice/20_dice[2].png");
+  --20_dice3: url("/images/20_dice/20_dice[3].png");
+  --20_dice4: url("/images/20_dice/20_dice[4].png");
+  --20_dice5: url("/images/20_dice/20_dice[5].png");
+  --20_dice6: url("/images/20_dice/20_dice[6].png");
+  --20_dice7: url("/images/20_dice/20_dice[7].png");
+  --20_dice8: url("/images/20_dice/20_dice[8].png");
+  --20_dice9: url("/images/20_dice/20_dice[9].png");
+  --20_dice10: url("/images/20_dice/20_dice[10].png");
+  --20_dice11: url("/images/20_dice/20_dice[11].png");
+  --20_dice12: url("/images/20_dice/20_dice[12].png");
+  --20_dice13: url("/images/20_dice/20_dice[13].png");
+  --20_dice14: url("/images/20_dice/20_dice[14].png");
+  --20_dice15: url("/images/20_dice/20_dice[15].png");
+  --20_dice16: url("/images/20_dice/20_dice[16].png");
+  --20_dice17: url("/images/20_dice/20_dice[17].png");
+  --20_dice18: url("/images/20_dice/20_dice[18].png");
+  --20_dice19: url("/images/20_dice/20_dice[19].png");
+  --20_dice20: url("/images/20_dice/20_dice[20].png");
+}
+
+/* ダイス 4面 */
+[src="/images/4_dice/4_dice[1].png"] {
+  content: var(--4_dice1);
+}
+
+[src="/images/4_dice/4_dice[2].png"] {
+  content: var(--4_dice2);
+}
+
+[src="/images/4_dice/4_dice[3].png"] {
+  content: var(--4_dice3);
+}
+
+[src="/images/4_dice/4_dice[4].png"] {
+  content: var(--4_dice4);
+}
+
+/* ダイス 6面 */
+[src="/images/6_dice/6_dice[1].png"] {
+  content: var(--6_dice1);
+}
+
+[src="/images/6_dice/6_dice[2].png"] {
+  content: var(--6_dice2);
+}
+
+[src="/images/6_dice/6_dice[3].png"] {
+  content: var(--6_dice3);
+}
+
+[src="/images/6_dice/6_dice[4].png"] {
+  content: var(--6_dice4);
+}
+
+[src="/images/6_dice/6_dice[5].png"] {
+  content: var(--6_dice5);
+}
+
+[src="/images/6_dice/6_dice[6].png"] {
+  content: var(--6_dice6);
+}
+
+/* ダイス 10面1の位 */
+[src="/images/10_dice/10_dice[1].png"] {
+  content: var(--10to10_dice1);
+}
+
+[src="/images/10_dice/10_dice[2].png"] {
+  content: var(--10to10_dice2);
+}
+
+[src="/images/10_dice/10_dice[3].png"] {
+  content: var(--10to10_dice3);
+}
+
+[src="/images/10_dice/10_dice[4].png"] {
+  content: var(--10to10_dice1);
+}
+
+[src="/images/10_dice/10_dice[5].png"] {
+  content: var(--10to10_dice5);
+}
+
+[src="/images/10_dice/10_dice[6].png"] {
+  content: var(--10to10_dice6);
+}
+
+[src="/images/10_dice/10_dice[7].png"] {
+  content: var(--10to10_dice7);
+}
+
+[src="/images/10_dice/10_dice[8].png"] {
+  content: var(--10to10_dice8);
+}
+
+[src="/images/10_dice/10_dice[9].png"] {
+  content: var(--10to10_dice9);
+}
+
+[src="/images/10_dice/10_dice[10].png"] {
+  content: var(--10to10_dice10);
+}
+
+/* ダイス 10面10の位 */
+[src="/images/100_dice/100_dice[1].png"] {
+  content: var(--10to100_dice1);
+}
+
+[src="/images/100_dice/100_dice[2].png"] {
+  content: var(--10to100_dice2);
+}
+
+[src="/images/100_dice/100_dice[3].png"] {
+  content: var(--10to100_dice3);
+}
+
+[src="/images/100_dice/100_dice[4].png"] {
+  content: var(--10to100_dice1);
+}
+
+[src="/images/100_dice/100_dice[5].png"] {
+  content: var(--10to100_dice5);
+}
+
+[src="/images/100_dice/100_dice[6].png"] {
+  content: var(--10to100_dice6);
+}
+
+[src="/images/100_dice/100_dice[7].png"] {
+  content: var(--10to100_dice7);
+}
+
+[src="/images/100_dice/100_dice[8].png"] {
+  content: var(--10to100_dice8);
+}
+
+[src="/images/100_dice/100_dice[9].png"] {
+  content: var(--10to100_dice9);
+}
+
+[src="/images/100_dice/100_dice[10].png"] {
+  content: var(--10to100_dice10);
+}
+
+/* ダイス 20面 */
+[src="/images/20_dice/20_dice[1].png"] {
+  content: var(--20_dice1);
+}
+
+[src="/images/20_dice/20_dice[2].png"] {
+  content: var(--20_dice2);
+}
+
+[src="/images/20_dice/20_dice[3].png"] {
+  content: var(--20_dice3);
+}
+
+[src="/images/20_dice/20_dice[4].png"] {
+  content: var(--20_dice4);
+}
+
+[src="/images/20_dice/20_dice[5].png"] {
+  content: var(--20_dice5);
+}
+
+[src="/images/20_dice/20_dice[6].png"] {
+  content: var(--20_dice6);
+}
+
+[src="/images/20_dice/20_dice[7].png"] {
+  content: var(--20_dice7);
+}
+
+[src="/images/20_dice/20_dice[8].png"] {
+  content: var(--20_dice8);
+}
+
+[src="/images/20_dice/20_dice[9].png"] {
+  content: var(--20_dice9);
+}
+
+[src="/images/20_dice/20_dice[10].png"] {
+  content: var(--20_dice10);
+}
+
+[src="/images/20_dice/20_dice[11].png"] {
+  content: var(--20_dice11);
+}
+
+[src="/images/20_dice/20_dice[12].png"] {
+  content: var(--20_dice12);
+}
+
+[src="/images/20_dice/20_dice[13].png"] {
+  content: var(--20_dice13);
+}
+
+[src="/images/20_dice/20_dice[14].png"] {
+  content: var(--20_dice14);
+}
+
+[src="/images/20_dice/20_dice[15].png"] {
+  content: var(--20_dice15);
+}
+
+[src="/images/20_dice/20_dice[16].png"] {
+  content: var(--20_dice16);
+}
+
+[src="/images/20_dice/20_dice[17].png"] {
+  content: var(--20_dice17);
+}
+
+[src="/images/20_dice/20_dice[18].png"] {
+  content: var(--20_dice18);
+}
+
+[src="/images/20_dice/20_dice[19].png"] {
+  content: var(--20_dice19);
+}
+
+[src="/images/20_dice/20_dice[20].png"] {
+  content: var(--20_dice20);
+}
